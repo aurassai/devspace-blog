@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "./Header";
+import Search from "./Search";
 const Layout = ({
     title = "Welcome to DevSpace",
     keywords = "development, coding, programming",
@@ -15,6 +16,7 @@ const Layout = ({
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
+            <Search />
             <main className="container mx-auto my-7">{children}</main>
         </div>
     );
